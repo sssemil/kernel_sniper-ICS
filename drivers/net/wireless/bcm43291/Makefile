@@ -51,7 +51,7 @@ EXTRA_CFLAGS = \
 	-DDHD_GPL \
 	-DBCMLXSDMMC \
 	-DBCMPLATFORM_BUS \
-	-Wall -Wstrict-prototypes -Werror \
+	-Wall -Wstrict-prototypes \
 	-I$(SRCROOT) \
 	-I$(SRCROOT)/include \
 	-I$(SRCROOT)/shared \
@@ -130,3 +130,4 @@ endif
 ifeq ($(CONFIG_LGE_BCM432X_PATCH), y)
 EXTRA_CFLAGS += -DWIFI_DOMESTIC_SUPPORT
 endif
+
